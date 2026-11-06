@@ -1,0 +1,13 @@
+/*
+  netlify.toml - Konfigurasi deploy ke Netlify
+  Pastikan file ini ada di root folder edulearn/
+*/
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
